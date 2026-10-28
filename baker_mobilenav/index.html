@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Mobile Navigation: Right-Side Drawer
+    Author: Isabelle Baker
+    Date:   10/28/2026
+
+    Filename: index.html
+   -->
+	<head>
+		<title>Isabelle Baker - Mobile Navigation Demo</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Test, school, NOVA, HTML">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+<body>
+<!-- a header containing a brand, a navigation, and a button which expands the navigation on mobile -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">Isabelle Baker</a>
+	  <!-- the aria lines of code make it accessible to screen-readers -->
+      <button
+        type="button"
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu">
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul class="navlinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#tracks">Tracks</a></li>
+          <li><a href="#apply">Apply</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="nav-backdrop" hidden></div>
+<!-- placeholder text which makes the page scrollable and makes the nav link to something -->
+  <main id="top">
+    <h1>We Want To Help</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </main>
+  <section id="home">
+	<h2>Home</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+   <section id="programs">
+	<h2>Programs</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section id="tracks">
+	<h2>Tracks</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section id="apply">
+	<h2>Apply</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+  <footer>
+    <p>&copy; 2026 Isabelle Baker</p>
+  </footer>
+<!-- links to the javascript script which makes the button work -->
+  <script src="js/script.js"></script>
+  <h3>Reflection</h3>
+	<p>Many of the things I was asked to do for this assignment were somewhat confusing to me. It seems I've still got a lot to learn about the sorts of things you're able to do with CSS as the exact mechanics of what makes the hamburger button open and close are still a little opaque to me. Being able to make it slide out like that is really cool though. Interesting that javascript is required to close it? I've also got to look more into accessibility features, I was aware of automatic screen resizing for mobile but never encountered all this aria stuff before.</p>
+</body>
+</html>

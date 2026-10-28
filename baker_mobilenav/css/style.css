@@ -1,0 +1,51 @@
+/* Desktop styles (default) */
+.site-header { /* sticky bar across the top */ }
+.header-inner {
+  display: flex;
+  justify-content: space-between;   /* brand left, nav right */
+  align-items: center;
+}
+/* .menu-toggle refers to the hamburger button */
+.menu-toggle { display: none; }      /* hidden on desktop */
+/* displays the links in the navigation as an evenly spaced row */
+.primary-nav .navlinks {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+/* color palette */
+body {
+	background-color: AntiqueWhite;
+	color: chocolate;
+}
+
+a {
+	color: brown;
+}
+
+/* Mobile drawer */
+@media (max-width: 767px) {
+  .menu-toggle { display: inline-flex; }
+  .primary-nav {
+    position: fixed;
+    top: 0;
+    right: 0;                        /* RIGHT side */
+    bottom: 0;
+    width: 300px;
+    max-width: 85vw;
+    transform: translateX(100%);     /* off-screen */
+    transition: transform 0.28s ease;
+  }
+  body.menu-open .primary-nav {
+    transform: translateX(0);        /* slide in */
+  }
+  /* makes the background color change when the hamburger button menu is open */
+  .nav-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(42, 28, 32, 0.5);
+  }
+  /* body scroll locked while menu open */
+  body.menu-open { overflow: hidden; }
+}
